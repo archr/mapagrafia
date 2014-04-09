@@ -26,10 +26,26 @@ block content
 
   .footer
 
+  .follow
+    iframe(src="http://ghbtns.com/github-btn.html?user=berser&repo=mapagrafia&type=watch&size=large", height="30", width="100", frameborder="0", scrolling="0", style="width:100px; height: 30px;", allowTransparency="true")
+    iframe(src="http://ghbtns.com/github-btn.html?user=berser&repo=mapagrafia&type=fork&size=large", height="30", width="100", frameborder="0", scrolling="0", style="width:100px; height: 30px;", allowTransparency="true")
+    a.twitter-follow-button(href="https://twitter.com/__arch3r",data-show-count="false", data-lang="es") Seguir a @__arch3r
+    script.
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
 
 append stylesheet
   style(type='text/css').
+    .follow {
+      height: 300px;
+      width: 150px;
+      position:absolute;
+      right: 70px;
+      top: 70px;
+      z-index:100;
+
+    }
+
     .home {
       text-align: center;
     }
